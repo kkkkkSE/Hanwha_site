@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+.banner{
+  background-image: url(../img/prcenter/bg.jpg);
+}
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.info_section{
+  padding: 120px 0;
+}
+.info_section .inner{
+  display: flex;
+}
+.info_section .inner .title_wrap{
+  width: calc(100% / 3 * 2);
+  padding: 0 10px;
+}
+.info_section .inner .title_wrap b{
+  font-size: 28px;
+  color: #333;
+  line-height: 1.5;
+}
+.info_section .inner .title_wrap .line{
+  width: 60px;
+  height: 2px;
+  background-color: #f47323;
+  margin: 50px 0;
+}
+.info_section .inner .title_wrap p{
+  font-size: 14px;
+  color: #555;
+}
+
+.info_section .title_img{
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+
+.fundraising{
+  padding: 160px 0 140px;
+  background-image: url(../img/prcenter/bg2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.fundraising .inner{
+  display: flex;
+}
+
+.fundraising .inner .img_part{
+  position: relative;
+  width: calc(100% / 12 * 5);
+  padding: 0 10px;
+}
+.fundraising .inner .img_part img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.fundraising .inner .txt_part{
+  width: calc(100% / 12 * 7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+.fundraising .inner .txt_part span{
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.fundraising .inner .txt_part b{
+  margin: 20px 0;
+  font-size: 36px;
+  line-height: 1;
+  color: #f47323;
+}
+.fundraising .inner .txt_part p{
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+
+.service_wrap{
+  padding: 120px 0 140px;
+}
+.service_wrap .inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service_wrap .inner .service{
+  width: calc(100% / 3);
+  padding: 0 10px;
+}
+
+.service_wrap .inner .service .title{
+  font-size: 20px;
+  color: #555;
+}
+.service_wrap .inner .service .line{
+  width: 40px;
+  height: 3px;
+  background-color: #f47323;
+  margin: 15px 0;
+}
+.service_wrap .inner .service p{
+  font-size: 14px;
+  line-height: 1.5;
+}
+.service_wrap .inner .service .service_img{
+  height: 226px;
+  margin-top: 25px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.service_wrap .inner .service:nth-child(1) .service_img{background-image: url(../img/prcenter/content_img1.jpg);}
+.service_wrap .inner .service:nth-child(2) .service_img{background-image: url(../img/prcenter/content_img2.jpg);}
+.service_wrap .inner .service:nth-child(3) .service_img{background-image: url(../img/prcenter/content_img3.jpg);}
+
+
+
+
+@media (max-width:1199px){
+  .inner{
+    width: 100%;
+  }
+
+  .info_section{
+    position: relative;
+  }
+  .info_section .inner{
+    flex-direction: column;
+  }
+  .info_section .inner .title_wrap{
+    width: 100%;
+    padding: 0 30px;
+  }
+  .info_section .title_img{
+    position: absolute;
+    right: 0;
+    top: 180px;
+  }
+  .info_section .title_img img{
+    height: 100px;
+  }
+
+
+  .fundraising{
+    padding: 0 0 60px;
+  }
+  .fundraising .inner{
+    flex-direction: column;
+  }
+  .fundraising .inner .img_part{
+    width: 100%;
+    text-align: center;
+    top: -60px;
+  }
+  .fundraising .inner .img_part img{
+    position: static;
+  }
+  .fundraising .inner .txt_part{
+    width: 100%;
+    padding: 0 100px;
+  }
+
+
+  .service_wrap .inner{
+    padding: 0 30px;
+  }
+  .service_wrap .inner .service{
+    width: calc(100% / 3 - 10px);
+    padding: 0;
+  }
+  .service_wrap .inner .service .service_img{
+    height: 200px;
+  }
+}
+
+@media (max-width:767px){
+  .info_section{
+    padding: 40px 0 80px;
+  }
+  .info_section .inner .title_wrap{
+    padding: 0 5%;
+  }
+  .info_section .inner .title_wrap b{
+    font-size: 24px;
+  }
+
+  .info_section .title_img{
+    top: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .info_section .title_img img{
+    height: 200px;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+
+  .fundraising{
+    padding: 0 0 160px;
+  }
+  .fundraising .inner .img_part{
+    top: -40px;
+  }
+  .fundraising .inner .img_part img{
+    height: 270px;
+  }
+  .fundraising .inner .txt_part{
+    padding: 0 5%;
+  }
+
+  .service_wrap{
+    padding: 80px 0;
+  }
+  .service_wrap .inner{
+    padding: 0 5%;
+  }
+  .service_wrap .inner .service{
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  
+
+}

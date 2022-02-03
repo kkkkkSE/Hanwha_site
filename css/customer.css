@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+.banner{
+  background-image: url(../img/customer/bg.jpg);
+}
+
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inquiry_section{
+  padding: 100px 0 80px;
+}
+.inquiry_section .inner{}
+.inquiry_section .inner .inquiry_title{
+  padding: 0 10px;
+}
+.inquiry_section .inner .inquiry_title h2{
+  font-size: 20px;
+  color: #555;
+}
+.inquiry_section .inner .inquiry_title .line{
+  width: 40px;
+  height: 3px;
+  background-color: #f47323;
+  margin-top: 15px;
+}
+.inquiry_section .inner .inquiry_title .title_desc{}
+.inquiry_section .inner .inquiry_title .title_desc b{
+  display: block;
+  padding: 30px 0;
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+}
+.inquiry_section .inner .inquiry_title .title_desc p{
+  font-size: 14px;
+  color: #555;
+}
+
+
+.inquiry_section .inner .about_apt{
+  padding-top: 60px;
+}
+
+.inquiry_section .inner .about_apt .apt_top{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.inquiry_section .inner .about_apt .apt_top p{
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+.inquiry_section .inner .about_apt .apt_top a{
+  display: block;
+  padding: 10px 25px;
+  background-color: #f47323;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.inquiry_section .inner .about_apt .apt_bottom{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn{
+  width: calc(100% / 3 - 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 30px 20px;
+  margin: 0 10px;
+}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part{}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part .btn_title{
+  font-size: 14px;
+  color: #777;
+}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part b{
+  font-size: 30px;
+  color: #555;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part span{
+  display: inline-block;
+  background-image: url(../img/menu_bar.png);
+  width: 8px;
+  height: 17px;
+  background-size: contain;
+  background-position: 50% bottom;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn .img_part{}
+.inquiry_section .inner .about_apt .apt_bottom .apt_btn .img_part img{}
+
+
+
+.terms_section{}
+.terms_section .inner{
+  padding: 0 10px;
+}
+.terms_section .inner .procedure{}
+.terms_section .inner .procedure ol{
+  display: flex;
+}
+.terms_section .inner .procedure ol li{
+  width: calc(100% / 3);
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #e7e7e7;
+  font-size: 14px;
+  color: #f47323;
+  position: relative;
+  text-align: center;
+}
+.terms_section .inner .procedure ol li:nth-child(1){
+  background-color: #f47323;
+  color: #fff;
+}
+
+.terms_section .inner .procedure ol li .left_arrow{
+  display: inline-block;
+  width: 14px;
+  height: 46px;
+  background-color: #fff;
+  background-image: url(../img/customer/txt_bar_left_grey.png);
+  position: absolute;
+  left: 0;
+}
+.terms_section .inner .procedure ol li .right_arrow{
+  display: inline-block;
+  width: 15px;
+  height: 46px;
+  background-color: #fff;
+  background-image: url(../img/customer/txt_bar_right_grey.png);
+  position: absolute;
+  right: 0;
+}
+.terms_section .inner .procedure ol li:nth-child(1) .left_arrow{background-image: url(../img/customer/txt_bar_left.png);}
+.terms_section .inner .procedure ol li:nth-child(1) .right_arrow{background-image: url(../img/customer/txt_bar_right.png);}
+
+
+.terms_section .inner .agree_part{}
+.terms_section .inner .agree_part h2{
+  padding: 38px 0 40px;
+  font-weight: normal;
+  font-size: 20px;
+  color: #555;
+}
+.terms_section .inner .agree_part p{
+  font-size: 14px;
+  color: #555;
+}
+
+.terms_section .inner .agree_part .agree_cont{
+  padding: 40px 0 10px;
+  font-size: 14px;
+}
+.terms_section .inner .agree_part .agree_cont p{
+  background-color: #e7e7e7;
+  padding: 20px;
+  overflow-y: scroll;
+  height: 440px;
+  font-size: 14px;
+}
+
+.terms_section .inner .agree_part .agree_confirm{
+  display: flex;
+  justify-content: flex-end;
+}
+.terms_section .inner .agree_part .agree_confirm p{
+  padding-right: 5px;
+}
+.terms_section .inner .agree_part .agree_confirm input{}
+.terms_section .inner .agree_part .agree_confirm label{
+  font-size: 14px;
+  color: #333;
+}
+
+
+.certify_section{
+  padding: 40px 0 100px;
+}
+.certify_section .inner{
+  padding: 0 10px;
+}
+.certify_section .inner .certify_title{}
+.certify_section .inner .certify_title .title{
+  font-weight: normal;
+  font-size: 20px;
+  color: #555;
+}
+.certify_section .inner .certify_title p{
+  padding: 40px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.certify_section .inner .i_pin{
+  padding: 30px;
+  border: 1px solid #f47323;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.certify_section .inner .i_pin .i_pin_desc{
+  display: flex;
+  align-items: center;
+}
+.certify_section .inner .i_pin .i_pin_desc img{
+  display: block;
+}
+.certify_section .inner .i_pin .i_pin_desc p{
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+.certify_section .inner .i_pin a{
+  display: block;
+  padding: 5px 30px;
+  background-color: #f47323;
+  font-size: 14px;
+  color: #fff;
+}
+
+.certify_section .inner .fin_confirm{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certify_section .inner .fin_confirm .ok_btn{
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #f47323;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 20px;
+  color: #fff;
+}
+.certify_section .inner .fin_confirm .cancel_btn{
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #555;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+@media (max-width:1199px){
+
+  .inner{
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .inquiry_section{
+    padding: 60px 0 80px;
+  }
+  .inquiry_section .inner .inquiry_title{
+    padding: 0;
+  }
+  .inquiry_section .inner .inquiry_title .title_desc b{
+    padding: 20px 0;
+  }
+
+
+  .inquiry_section .inner .about_apt .apt_top{
+    padding: 0;
+  }
+
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn{
+    width: calc(100% / 3 - 10px);
+    margin: 0;
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part b{
+    font-size: 18px;
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .img_part img{
+    width: 40px;
+  }
+
+
+  .terms_section .inner{
+    padding: 0 30px;
+  }
+
+  .certify_section{
+    padding: 40px 0 120px;
+  }
+  .certify_section .inner{
+    padding: 0 30px;
+  }
+
+  .certify_section .inner .i_pin{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .certify_section .inner .i_pin .i_pin_desc{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .certify_section .inner .i_pin .i_pin_desc p{
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  .certify_section .inner .i_pin a{
+    position: relative;
+    right: 0;
+  }
+  
+}
+
+@media (max-width:767px){
+  .banner{
+    background-position: 70% center;
+  }
+  .inner{
+    width: 100%;
+    padding: 0 5%;
+  }
+
+
+  .inquiry_section{
+    padding: 40px 0 80px;
+  }
+
+  .inquiry_section .inner .about_apt .apt_top{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .inquiry_section .inner .about_apt .apt_top p{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .inquiry_section .inner .about_apt .apt_top a{
+    width: 150px;
+    padding: 10px 0;
+  }
+  
+  .inquiry_section .inner .about_apt .apt_bottom{
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn{
+    position: relative;
+    height: 120px;
+    padding: 20px 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part .btn_title{
+    letter-spacing: -1px;
+    width: 100%;
+  } 
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part b{
+    font-size: 16px;
+  }
+
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .img_part{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .img_part{
+    width: 30%;
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn .img_part img{
+    width: 100%;
+  }
+  .inquiry_section .inner .about_apt .apt_bottom .apt_btn:nth-child(1) .img_part{
+    display: none;
+  }
+
+
+  .terms_section .inner{
+    padding: 0 5%;
+  }
+  .terms_section .inner .procedure ol li{
+    width: 100%;
+  }
+  .terms_section .inner .procedure ol li:nth-child(2){display: none;}
+  .terms_section .inner .procedure ol li:nth-child(3){display: none;}
+  .terms_section .inner .procedure ol li .left_arrow{display: none;}
+  .terms_section .inner .procedure ol li .right_arrow{display: none;}
+
+
+  .terms_section .inner .agree_part h2{
+    font-size: 18px;
+  }
+  .terms_section .inner .agree_part .agree_cont p{
+    height: 360px;
+  }
+
+
+  .terms_section .inner .agree_part .agree_confirm{
+    justify-content: flex-start;
+  }
+
+
+
+  .certify_section .inner{
+    padding: 0 5%;
+  }
+  .certify_section .inner .certify_title .title{
+    font-size: 18px;
+  }
+  .certify_section .inner .i_pin{
+    align-items: center;
+  }
+  .certify_section .inner .i_pin .i_pin_desc{
+    align-items: center;
+    text-align: center;
+  }
+  .certify_section .inner .i_pin .i_pin_desc p{
+    padding-bottom: 20px;
+  }
+  .certify_section .inner .i_pin a{
+    font-size: 12px;
+  }
+
+
+  .certify_section .inner .fin_confirm{
+    justify-content: space-between;
+  }
+  .certify_section .inner .fin_confirm .ok_btn{
+    margin-right: 0;
+    width: calc(50% - 4px);
+  }
+  .certify_section .inner .fin_confirm .cancel_btn{
+    width: calc(50% - 4px);
+  }
+
+
+
+}

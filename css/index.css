@@ -1,0 +1,702 @@
+@charset "utf-8";
+
+/* 메인배너 */
+.main_bn{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.main_bn .slide_wrap{
+  width: 400%;
+  height: 100%;
+  display: flex;
+  margin-left: -100%;
+}
+
+.main_bn .slide_wrap .slide{
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+.main_bn .slide_wrap .slide1{background-image: url(../img/main_slide01.jpg);}
+.main_bn .slide_wrap .slide2{background-image: url(../img/main_slide02.jpg);}
+.main_bn .slide_wrap .slide3{background-image: url(../img/main_slide03.jpg);}
+.main_bn .slide_wrap .slide4{background-image: url(../img/main_slide04.jpg);}
+
+.main_bn .slide_wrap .slide .slide_cont{
+  position: absolute;
+  left: 370px;
+  bottom: 160px;
+}
+.main_bn .slide_wrap .slide .slide_cont .eng_title{
+  font-size: 80px;
+  color: #fff;
+  text-shadow: -4px 4px 10px rgba(0,0,0,0.6);
+  line-height: 1;
+  padding-bottom: 20px;
+}
+.main_bn .slide_wrap .slide .slide_cont .eng_title span{
+  font-size: 60px;
+  display: block;
+  font-weight: normal;
+}
+
+.main_bn .slide_wrap .slide .slide_cont .kor_title{
+  font-size: 40px;
+  color: #fff;
+  font-weight: normal;
+}
+.main_bn .slide_wrap .slide .slide_cont .desc{
+  font-size: 14px;
+  color: #fff;
+  padding: 20px 0;
+}
+.main_bn .slide_wrap .slide .slide_cont a{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  width: 145px; height: 40px;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 40px;
+  transition: background-color 0.5s, color 0.5s;
+}
+.main_bn .slide_wrap .slide .slide_cont a:hover{
+  background-color: #fff;
+  color: #555;
+}
+
+.main_bn .slide_btn_wrap{
+  position: absolute;
+  left: 370px;
+  bottom: 0px;
+  padding: 20px 0 30px;
+  display: flex;
+}
+.main_bn .slide_btn_wrap a{
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+
+/* our business */
+.cpn_info{
+  padding: 135px 0 120px;
+  background-image: url(../img/slide_bottom_icon.png);
+  background-size: auto 90px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.cpn_info .inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+.cpn_info .inner .section_title{
+  text-align: center;
+}
+.cpn_info .inner .section_title .title{
+  font-size: 50px;
+  color: #555;
+}
+.cpn_info .inner .section_title .sub_title{
+  font-size: 14px;
+}
+
+.cpn_info .inner .cont_wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cpn_info .inner .cont_wrap .cont{
+  width: 25%;
+  padding: 90px 10px 0;
+}
+.cpn_info .inner .cont_wrap .cont .cont_img{
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cpn_info .inner .cont_wrap .cont .cont_img img{}
+
+.cpn_info .inner .cont_wrap .cont .cont_txt{}
+.cpn_info .inner .cont_wrap .cont .cont_txt p{
+  font-size: 14px;
+  word-break: keep-all;
+}
+
+/* apt view */
+.apt_view{
+  display: flex;
+  width: 100%;
+  height: 480px;
+}
+.apt_view .apt_img{
+  width: calc(100% / 3);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.apt_view .apt_img:nth-child(1){background-image: url(../img/business_img01.jpg);}
+.apt_view .apt_img:nth-child(2){background-image: url(../img/business_img02.jpg);}
+.apt_view .apt_img:nth-child(3){background-image: url(../img/business_img03.jpg);}
+.apt_view .apt_img .img_dark{
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.apt_view .apt_img:hover .img_dark{
+  opacity: 1;
+}
+.apt_view .apt_img .img_dark .zoom_icon{
+  cursor: pointer;
+}
+.apt_view .apt_img .img_dark span{
+  font-size: 20px;
+  color: #f47323;
+}
+
+/* hanwha story */
+.cpn_story{
+  padding: 80px 0;
+}
+.cpn_story .inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+.cpn_story .inner .section_title{
+  text-align: center;
+  padding-bottom: 90px;
+}
+.cpn_story .inner .section_title .title{
+  font-size: 50px;
+  color: #555;
+}
+.cpn_story .inner .section_title .sub_title{
+  font-size: 14px;
+}
+
+.cpn_story .inner .cont_wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.cpn_story .inner .cont_wrap .cont{
+  width: calc(100% / 3);
+  padding: 0 10px;
+}
+
+.cpn_story .inner .cont_wrap .cont .cont_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 220px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.cpn_story .inner .cont_wrap .cont:nth-child(1) .cont_img{background-image: url(../img/story_img01.jpg);}
+.cpn_story .inner .cont_wrap .cont:nth-child(2) .cont_img{background-image: url(../img/story_img02.jpg);}
+.cpn_story .inner .cont_wrap .cont:nth-child(3) .cont_img{background-image: url(../img/story_img03.jpg);}
+
+
+
+.cpn_story .inner .cont_wrap .cont .cont_txt{}
+.cpn_story .inner .cont_wrap .cont .cont_txt h4{
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.cpn_story .inner .cont_wrap .cont .cont_txt p{
+  font-size: 14px;
+  word-break: keep-all;
+}
+
+/* sub banner */
+.sub_bn{
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/banner_img.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sub_bn .sub_bn_wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+.sub_bn .sub_bn_wrap img{}
+.sub_bn .sub_bn_wrap p{
+  font-size: 30px;
+  color: #fff;
+  padding: 20px 0;
+}
+.sub_bn .sub_bn_wrap a{
+  display: block;
+  width: 126px;
+  height: 36px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 auto;
+  transition: background-color 0.5s, color 0.5s;
+}
+.sub_bn .sub_bn_wrap a:hover{
+  background-color: #fff;
+  color: #555;
+}
+
+
+/* 메뉴 바로가기 */
+.rcmd_menu{
+  padding: 110px 0;
+}
+.rcmd_menu .inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+.rcmd_menu .inner .cont_wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.rcmd_menu .inner .cont_wrap .cont{
+  height: 240px;
+  width: calc((100% / 3) - 20px);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.rcmd_menu .inner .cont_wrap .cont1{
+  background-color: #f47321;
+  padding: 60px 25px 30px;
+  position: relative;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_img{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_img img{
+  display: block;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_txt{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_txt:before{
+  content: "";
+  width: 28px;
+  height: 3px;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  background-color: #fff;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_top{
+  position: relative;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_top h3{
+  font-size: 20px;
+  color: #fff;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_top span{
+  font-size: 13px;
+  color: #fff;
+}
+.rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_btm p{
+  font-size: 14px;
+  color: #fff;
+}
+
+.rcmd_menu .inner .cont_wrap .cont2{
+  display: flex;
+}
+.rcmd_menu .inner .cont_wrap .cont2 > div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rcmd_menu .inner .cont_wrap .cont2 .cont_img{}
+.rcmd_menu .inner .cont_wrap .cont2 .cont_img img{}
+.rcmd_menu .inner .cont_wrap .cont2 .cont_txt{}
+.rcmd_menu .inner .cont_wrap .cont2 .cont_txt h3{
+  font-size: 18px;
+  color: #555;
+}
+.rcmd_menu .inner .cont_wrap .cont2 .cont_txt span{
+  font-size: 14px;
+  color: #555;
+}
+
+.rcmd_menu .inner .cont_wrap .cont3{
+  background-image: url(../img/career_img.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 60px 25px 30px;
+}
+.rcmd_menu .inner .cont_wrap .cont3 .cont_txt{
+  position: relative;
+}
+.rcmd_menu .inner .cont_wrap .cont3 .cont_txt:before{
+  content: "";
+  width: 28px;
+  height: 3px;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  background-color: #fff;
+}
+.rcmd_menu .inner .cont_wrap .cont3 .cont_txt h3{
+  font-size: 20px;
+  color: #fff;
+}
+.rcmd_menu .inner .cont_wrap .cont3 .cont_txt span{
+  font-size: 13px;
+  color: #fff;
+}
+
+.rcmd_menu .inner .go_page{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+
+}
+.rcmd_menu .inner .go_page a{
+  display: block;
+  width: calc(100% / 3 - 20px);
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #888;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+
+  background-image: url(../img/moer_btn.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+
+  margin: 0 10px;
+}
+
+
+
+
+@media (max-width:1199px){
+  /* 메인배너 */
+  .main_bn .slide_wrap .slide .slide_cont{
+    left: 50px;
+    bottom: 160px;
+  }
+  
+  .main_bn .slide_btn_wrap{
+    left: 50px;
+    bottom: 40px;
+    padding-bottom: 0;
+  }
+
+  /* 섹션1 - our business */
+  .cpn_info .inner{
+    width: 100%;
+  }
+
+  .cpn_info .inner .cont_wrap {
+    padding: 0 30px;
+  }
+  .cpn_info .inner .cont_wrap .cont{
+    width: 50%;
+  }
+
+  .cpn_info .inner .cont_wrap .cont .cont_txt p{
+    word-break: normal;
+  }
+
+
+  /* apt view */
+  .apt_view{
+    height: 270px;
+  }
+
+  /* hanwha story */
+  .cpn_story{
+  padding: 65px 0;
+  }
+  .cpn_story .inner{
+    width: 100%;
+  }
+  
+  .cpn_story .inner .cont_wrap{
+    padding: 0 30px;
+  }
+
+  .cpn_story .inner .cont_wrap .cont .cont_img{
+    height: 180px;
+  }
+
+
+  /* 메뉴 바로가기 */
+  .rcmd_menu{
+    padding: 110px 0 160px;
+  }
+  .rcmd_menu .inner{
+    width: 100%;
+  }
+  .rcmd_menu .inner .cont_wrap{
+    padding: 0 30px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont{
+    width: calc(50% - 20px);
+    height: 200px;
+  }
+
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_img{
+    right: 40px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_img img{
+    height: 100px;
+  }
+
+  .rcmd_menu .inner .cont_wrap .cont1{
+    padding: 30px 20px 30px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_top h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+  }
+  .rcmd_menu .inner .cont_wrap .cont2 .cont_txt{
+    padding-top: 10px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont3{
+    padding: 30px 20px 30px;
+    margin-top: 15px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont3 .cont_txt h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+  }
+
+  .rcmd_menu .inner .go_page{
+    flex-direction: column;
+    width: calc(50% - 20px);
+    height: 200px;
+    margin-top: 15px;
+    justify-content: flex-end;
+  }
+  .rcmd_menu .inner .go_page a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  
+
+
+}
+
+@media (max-width:767px){
+  /* 메인배너 */
+  .main_bn{
+    height: 650px;
+  }
+  .main_bn .slide_wrap .slide .slide_cont{
+    left: 30px;
+    bottom: 120px;
+  }
+  .main_bn .slide_btn_wrap{
+    left: 30px;
+    bottom: 40px;
+  }
+  
+  .main_bn .slide_wrap .slide .slide_cont .eng_title{
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  .main_bn .slide_wrap .slide .slide_cont .eng_title span{
+    font-size: 32px;
+  }
+  .main_bn .slide_wrap .slide .slide_cont .kor_title{
+    font-size: 26px;
+  }
+  
+  /* 섹션1 - our business */
+  .cpn_info{
+    padding-bottom: 40px;
+  }
+  .cpn_info .inner .section_title .title{
+    font-size: 30px;
+  }
+  .cpn_info .inner .section_title .sub_title{
+    font-size: 12px;
+  }
+
+  .cpn_info .inner .cont_wrap{
+    padding: 20px 5% 0;
+  }
+  .cpn_info .inner .cont_wrap .cont{
+    width: 100%;
+    padding: 50px 0 0;
+  }
+  .cpn_info .inner .cont_wrap .cont .cont_img{  
+    height: 180px;
+  }
+
+  .cpn_info .inner .cont_wrap .cont .cont_txt p{
+    word-break: normal;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  
+  /* apt view */
+  .apt_view{
+    height: 200px;
+  }
+  .apt_view .apt_img{
+    width: 50%;
+  }
+  .apt_view .apt_img:nth-child(3){
+    display: none;
+  }
+  
+  /* hanwha story */
+  .cpn_story{
+    padding: 40px 0;
+  }
+  .cpn_story .inner .section_title{
+    padding-bottom: 40px;
+  }
+  .cpn_story .inner .section_title .title{
+    font-size: 30px;
+  }
+  .cpn_story .inner .section_title .sub_title{
+    font-size: 12px;
+  }
+
+  .cpn_story .inner .cont_wrap{
+    padding: 0 5%;
+  }
+  .cpn_story .inner .cont_wrap .cont{
+    width: calc(50% - 6px);
+    padding: 0;
+  }
+
+  .cpn_story .inner .cont_wrap .cont:nth-child(3){
+    display: none;
+  }
+
+  .cpn_story .inner .cont_wrap .cont .cont_img{
+    height: 110px;
+  }
+  .cpn_story .inner .cont_wrap .cont .cont_txt h4{
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .cpn_story .inner .cont_wrap .cont .cont_txt p{
+    display: none;
+  }
+  
+  /* sub banner */
+  .sub_bn{
+    height: 180px;
+  }
+  .sub_bn .sub_bn_wrap img{
+    height: 26px;
+  }
+  .sub_bn .sub_bn_wrap p{
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .sub_bn .sub_bn_wrap a{
+    font-size: 14px;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+  }
+  
+  /* 메뉴 바로가기 */
+  .rcmd_menu{
+    padding-top: 50px;
+  }
+  .rcmd_menu .inner .cont_wrap{
+    padding: 0 5%;
+    position: relative;
+  }
+
+  .rcmd_menu .inner .cont_wrap .cont{
+    height: 140px;
+    margin: 0;
+  }
+
+  .rcmd_menu .inner .cont_wrap .cont1{
+    width: 50%;
+  }
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_txt:before{
+    top: -5px;
+  }
+
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_img,
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_btm p{
+    display: none;
+  }
+  .rcmd_menu .inner .cont_wrap .cont1 .cont_txt .txt_top h3{
+    font-size: 16px;
+  }
+
+  .rcmd_menu .inner .cont_wrap .cont2{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 140px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont2 > div{
+    justify-content: flex-end;
+  }
+
+
+  .rcmd_menu .inner .cont_wrap .cont3{
+    background-image: none;
+    background-color: #83a5ae;
+    width: 50%;
+  }
+  .rcmd_menu .inner .cont_wrap .cont3 .cont_txt:before{
+    top: -5px;
+  }
+  .rcmd_menu .inner .cont_wrap .cont3 .cont_txt h3{
+    font-size: 16px;
+  }
+
+  .rcmd_menu .inner .go_page{
+    width: 100%;
+    margin: 0;
+    margin-top: 200px;
+  }
+  .rcmd_menu .inner .go_page a{
+    width: 100%;  
+    margin: 20px 0 0;
+  }
+
+
+}

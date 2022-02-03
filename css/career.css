@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+.banner{
+  background-image: url(../img/careers/bg.jpg);
+}
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.talent_section{
+  padding: 100px 0 120px;
+}
+.talent_section .inner{}
+.talent_section .inner .title{
+  padding-bottom: 80px;
+}
+.talent_section .inner .title h2{
+  font-size: 20px;
+  color: #555;
+}
+.talent_section .inner .title .line{
+  width: 40px;
+  height: 3px;
+  background-color: #f47323;
+  margin-top: 15px;
+}
+
+.talent_section .inner .talent_wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.talent_section .inner .talent_wrap .talent{
+  width: calc(100% / 3);
+  padding: 0 10px;
+}
+
+.talent_section .inner .talent_wrap .talent .img_part{
+  text-align: center;
+}
+.talent_section .inner .talent_wrap .talent .img_part img{}
+.talent_section .inner .talent_wrap .talent .img_part span{
+  display: block;
+  padding: 45px 0 15px;
+  font-size: 14px;
+  color: #333;
+}
+.talent_section .inner .talent_wrap .talent .img_part h3{
+  font-size: 24px;
+  color: #f47323;
+}
+
+.talent_section .inner .talent_wrap .talent .txt_part{
+  padding-top: 40px;
+  color: #555;
+}
+.talent_section .inner .talent_wrap .talent .txt_part b{}
+.talent_section .inner .talent_wrap .talent .txt_part p{
+  padding-top: 25px;
+  font-size: 14px;
+}
+
+
+.outcome_section{
+  background-image: url(../img/careers/bg2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 500px;
+}
+.outcome_section .inner{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.outcome_section .inner .outcome_txt{
+  width: calc(100% / 12 * 7);
+}
+.outcome_section .inner .outcome_txt b{
+  font-size: 22px;
+  font-weight: normal;
+  color: #fff;
+}
+.outcome_section .inner .outcome_txt .line{
+  width: 60px;
+  height: 2px;
+  background-color: #f47323;
+  margin: 20px 0;
+}
+.outcome_section .inner .outcome_txt p{
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+.outcome_section .inner .outcome_img{
+  width: calc(100% / 12 * 4);
+}
+.outcome_section .inner .outcome_img img{}
+
+
+.foster_section{
+  padding: 120px 0 140px;
+}
+.foster_section .inner{
+  padding: 0;
+}
+.foster_section .inner .title{
+  padding: 0 10px;
+}
+.foster_section .inner .title h2{
+  font-size: 20px;
+  color: #555;
+}
+.foster_section .inner .title .line{
+  width: 40px;
+  height: 3px;
+  background-color: #f47323;
+  margin-top: 15px;
+}
+.foster_section .inner .title .title_desc{}
+.foster_section .inner .title .title_desc b{
+  display: block;
+  padding: 30px 0;
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+}
+.foster_section .inner .title .title_desc p{
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+.foster_section .inner .program_wrap{
+  display: flex;
+  padding-top: 45px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.foster_section .inner .program_wrap .foster_program{
+  width: calc(100% / 3);
+  padding: 0 10px;
+}
+
+.foster_section .inner .program_wrap .foster_program .img_part{
+  text-align: center;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 190px;
+  padding: 0 20px;
+}
+.foster_section .inner .program_wrap .foster_program:nth-child(1) .img_part{background-image: url(../img/careers/img01.jpg);}
+.foster_section .inner .program_wrap .foster_program:nth-child(2) .img_part{background-image: url(../img/careers/img02.jpg);}
+.foster_section .inner .program_wrap .foster_program:nth-child(3) .img_part{background-image: url(../img/careers/img03.jpg);}
+.foster_section .inner .program_wrap .foster_program .img_part img{
+  padding: 20px 0;
+}
+.foster_section .inner .program_wrap .foster_program .img_part span{
+  display: block;
+  padding-bottom: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.foster_section .inner .program_wrap .foster_program .txt_part{}
+.foster_section .inner .program_wrap .foster_program .txt_part ul{}
+.foster_section .inner .program_wrap .foster_program .txt_part ul li{
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  border-bottom: 1px solid #f47323;
+  position: relative;
+}
+.foster_section .inner .program_wrap .foster_program .txt_part ul li .more{
+  display: inline-block;
+  background-image: url(../img/careers/btn_on.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 48px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+
+
+
+@media (max-width:1199px){
+  .inner{
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .talent_section{
+    padding: 80px 0;
+  }
+  .talent_section .inner .talent_wrap .talent{
+    width: calc(100% / 3 - 10px);
+    padding: 0;
+  }
+
+
+  .outcome_section{
+    padding: 100px 0;
+  }
+  .outcome_section .inner .outcome_img{
+    width: calc(100% / 12 * 5);
+    text-align: center;
+  }
+  .outcome_section .inner .outcome_img img{
+    height: 200px;
+  }
+
+  
+
+  .foster_section .inner{
+    padding: 0 30px;
+  }
+  .foster_section .inner .title{
+    padding: 0;
+  }
+
+  .foster_section .inner .program_wrap .foster_program{
+    width: calc(100% / 3 - 10px);
+    padding: 0;
+  }
+
+  .foster_section .inner .program_wrap .foster_program .img_part span{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:767px){
+  .inner{
+    padding: 0 5%;
+  }
+
+  .talent_section{
+    padding: 40px 0;
+  }
+  .talent_section .inner .title{
+    padding-bottom: 40px;
+  }
+
+  .talent_section .inner .talent_wrap .talent{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .talent_section .inner .talent_wrap .talent .img_part img{
+    height: 140px;
+  }
+  .talent_section .inner .talent_wrap .talent .img_part span{
+    display: block;
+    padding: 30px 0 5px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .talent_section .inner .talent_wrap .talent .txt_part p{
+    padding-top: 15px;
+  }
+
+  
+
+  .outcome_section{
+    height: auto;
+  }
+  .outcome_section .inner{
+    flex-direction: column;
+  }
+  .outcome_section .inner .outcome_txt{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .outcome_section .inner .outcome_img{
+    width: 100%;
+  }
+  
+
+  .foster_section{
+    padding: 80px 0;
+  }
+  .foster_section .inner{
+    padding: 0 5%;
+  }
+  .foster_section .inner .program_wrap .foster_program{
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .foster_section .inner .program_wrap .foster_program .img_part{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .foster_section .inner .program_wrap .foster_program .img_part span{
+    font-size: 18px;
+  }
+
+}
