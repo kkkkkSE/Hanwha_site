@@ -76,6 +76,7 @@
   border: 1px solid #ccc;
   padding: 30px 20px;
   margin: 0 10px;
+  cursor: pointer;
 }
 .inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part{}
 .inquiry_section .inner .about_apt .apt_bottom .apt_btn .txt_part .btn_title{

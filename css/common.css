@@ -55,6 +55,7 @@ header .hd_wrap .gnb{
 }
 header .hd_wrap .gnb > li{
   position: relative;
+  
 }
 header .hd_wrap .gnb > li:hover{
   background-color: #eee;
@@ -247,9 +248,12 @@ header .all_menu .all_menu_wrap .gnb > li .sub{
 }
 header .all_menu .all_menu_wrap .gnb > li .sub li{}
 header .all_menu .all_menu_wrap .gnb > li .sub li a{
+  display: block;
   font-size: 13px;
   color: #555;
   padding-right: 15px;
+  height: 55px;
+  line-height: 55px;
 }
 header .all_menu .all_menu_wrap .gnb > li .sub li a:hover{
   color: #f47321;
@@ -610,7 +614,8 @@ footer .top_btn:hover{
     display: block;
   }
   header .all_menu .all_menu_wrap .gnb > li .sub li a{
-    line-height: 16px;
+    line-height: 20px;
+    height: 20px;
   }
 
   header .all_menu_wrap .x_btn{
