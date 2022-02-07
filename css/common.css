@@ -635,6 +635,10 @@ footer .top_btn:hover{
     display: inline-block;
     padding-bottom: 20px;
   }
+  footer .ft_wrap .ft_left .ft_logo img{
+    padding-right: 0;
+    margin: 0 auto;
+  }
 
   footer .ft_wrap .ft_left .ft_cont .ft_menu{
     justify-content: center;
@@ -653,6 +657,11 @@ footer .top_btn:hover{
   footer .ft_wrap .ft_right .fam_site{
     margin-top: 20px;
   }
+  footer .ft_wrap .ft_right .fam_site .site_list{
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
 
     /* 서브페이지 */
     .banner{

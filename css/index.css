@@ -116,13 +116,14 @@
 }
 .cpn_info .inner .cont_wrap .cont{
   width: 25%;
-  padding: 90px 10px 0;
+  padding: 60px 10px 0;
 }
 .cpn_info .inner .cont_wrap .cont .cont_img{
   height: 190px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  padding-bottom: 30px;
 }
 .cpn_info .inner .cont_wrap .cont .cont_img img{}
 
